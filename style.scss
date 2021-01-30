@@ -14,15 +14,18 @@ body
 {
     font-size: 1.8rem;
     background: rgb(20, 20, 20);
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .box 
 {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100wh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-flow: row wrap;
     &::after
     {
         content: '';
@@ -35,7 +38,7 @@ body
         bottom: 0;
         left: 0;
         right: 0;
-        clip-path: circle(30rem at 3rem 3rem);
+        clip-path: circle(20% at 3rem 3rem);
     }
 
     &::before
@@ -50,7 +53,7 @@ body
         bottom: 0;
         left: 0;
         right: 0;
-        clip-path: circle(45rem at 100% 100%);
+        clip-path: circle(30% at 100% 100%);
     }
 
     .card
@@ -58,20 +61,22 @@ body
         height: 35rem;
         width: 25rem;
         padding: 2rem;
-        background: rgba(211, 211, 211, 0.199);
+        background: rgba(99, 98, 98, 0.418);
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.103);
         z-index: 3;
-        border-top: 1px solid rgba(255, 255, 255, 0.5);
-        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.377);
+        border-left: 1px solid rgba(255, 255, 255, 0.397);
         backdrop-filter: blur(0.5rem);
         border-radius: 1rem;
         color: white;
         cursor: pointer;
+        overflow: hidden;
+        margin: 2rem;
         .num 
         {
             font-size: 10rem;
             font-weight: 800;
-            color: rgba(0, 0, 0, 0.164);
+            color: rgba(0, 0, 0, 0.178);
             position: absolute;
             top: 0;
             right: 2rem;
@@ -80,14 +85,14 @@ body
         .title
         {
             margin: 5rem 0 2rem 0;
-            font-size: 2.5rem;
-            font-weight: 500;
+            font-size: 2.7rem;
+            font-weight: 800;
             text-align: center;
         }
         
         .text
         {
-            font-weight: 400;
+            font-weight: 300;
             text-align: center;
         }
     }
